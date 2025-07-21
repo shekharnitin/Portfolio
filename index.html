@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nitin Shekhar | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+</head>
+
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <div class="loading-content">
+            <div class="loading-spinner"></div>
+            <div class="loading-text">Initializing Portfolio...</div>
+        </div>
+    </div>
+
+    <!-- Floating Navigation -->
+    <nav class="floating-nav">
+        <div class="nav-dot active" data-section="hero">
+            <span class="nav-label">Home</span>
+        </div>
+        <div class="nav-dot" data-section="about">
+            <span class="nav-label">About</span>
+        </div>
+        <div class="nav-dot" data-section="experience">
+            <span class="nav-label">Experience</span>
+        </div>
+        <div class="nav-dot" data-section="projects">
+            <span class="nav-label">Projects</span>
+        </div>
+        <div class="nav-dot" data-section="skills">
+            <span class="nav-label">Skills</span>
+        </div>
+        <div class="nav-dot" data-section="contact">
+            <span class="nav-label">Contact</span>
+        </div>
+    </nav>
+
+    <!-- Sound Toggle -->
+    <div class="sound-toggle">
+        <button id="sound-btn" class="sound-button">🔊</button>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="particle-bg"></div>
+        <div class="floating-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+            <div class="shape shape-4"></div>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-name">Nitin Shekhar</h1>
+            <div class="hero-title">
+                <span id="typing-text"></span>
+                <span class="cursor">|</span>
+            </div>
+            <div class="skill-orbits">
+                <div class="orbit orbit-1">
+                    <div class="skill-badge">Python</div>
+                </div>
+                <div class="orbit orbit-2">
+                    <div class="skill-badge">Quant Finance</div>
+                </div>
+                <div class="orbit orbit-3">
+                    <div class="skill-badge">Software</div>
+                </div>
+            </div>
+            <div class="hero-cta">
+                <button class="btn btn--primary btn--lg cta-button">Explore My Work</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-grid">
+                <div class="about-content">
+                    <p>I'm a passionate Quantitative Research Consultant at WorldQuant, currently pursuing my B.Tech in
+                        Mechanical Engineering at IIT (ISM) Dhanbad. With expertise spanning quantitative finance,
+                        software development, and data analysis, I bridge the gap between complex financial theories and
+                        practical implementations.</p>
+
+                    <div class="achievements">
+                        <div class="achievement-badge glow">
+                            <div class="achievement-icon">🏆</div>
+                            <div class="achievement-text">
+                                <strong>Global Rank 25</strong><br>
+                                International Quant Championship 2024 (Stage 1)
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="timeline-container">
+                    <h3>Education & Experience Timeline</h3>
+                    <div class="timeline">
+                        <div class="timeline-item active">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h4>WorldQuant</h4>
+                                <span>Quantitative Research Consultant</span>
+                                <small>June 2024 - Present</small>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h4>IIT (ISM) Dhanbad</h4>
+                                <span>B.Tech Mechanical Engineering</span>
+                                <small>2023-2027</small>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h4>Dhruve Public School</h4>
+                                <span>Class XII(CBSE)</span>
+                                <small>2023</small>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h4>Kendriya Vidyalaya</h4>
+                                <span>Class X(CBSE)</span>
+                                <small>2021</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience-section">
+        <div class="container">
+            <h2 class="section-title">Experience Highlights</h2>
+            <div class="experience-grid">
+                <div class="experience-card">
+                    <h3>WorldQuant Impact</h3>
+                    <div class="impact-stats">
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="100">0</div>
+                            <div class="stat-label">Alpha Strategies</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="2.0">0</div>
+                            <div class="stat-label">Sharpe Ratio</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="4">0</div>
+                            <div class="stat-label">Markets</div>
+                        </div>
+                    </div>
+                    <div class="market-map">
+                        <div class="market-region" data-market="US">US</div>
+                        <div class="market-region" data-market="China">China</div>
+                        <div class="market-region" data-market="Asia">Asia</div>
+                        <div class="market-region" data-market="Europe">Global</div>
+                    </div>
+                </div>
+                <div class="sharpe-chart-container">
+                    <canvas id="alphaFactorChart"></canvas>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="project-carousel">
+                <div class="project-card active" data-project="0">
+                    <div class="project-header">
+                        <h3>Principal Component Analysis</h3>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Pandas</span>
+                            <span class="tech-tag">YFinance</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <p>Analyzed 10 years of daily price data for 30 Dow Jones stocks using PCA to identify main
+                            factors driving asset correlations.</p>
+                        <ul>
+                            <li>Captured 85% of total variance in first 3 components</li>
+                            <li>Automated data acquisition and visualization workflows</li>
+                            <li>End-to-end analysis pipelines for financial time series</li>
+                        </ul>
+                    </div>
+                    <div class="project-actions">
+                        <a href="https://github.com/shekharnitin/Portfolio-Optimization-using-PCA" target="_blank"
+                            class="btn btn--outline">View on GitHub</a>
+                    </div>
+                </div>
+
+                <div class="project-card" data-project="1">
+                    <div class="project-header">
+                        <h3>Option Pricing Model</h3>
+                        <div class="project-tech">
+                            <span class="tech-tag">Flask</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Bootstrap</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <p>Web application supporting three option pricing models with real-time data analysis.</p>
+                        <ul>
+                            <li>Black-Scholes, Binomial Tree, and Heston models</li>
+                            <li>5+ interactive visualizations</li>
+                            <li>Analysis of 50+ financial instruments</li>
+                            <li>RESTful API with robust error handling</li>
+                        </ul>
+                    </div>
+                    <div class="project-actions">
+                        <a href="https://github.com/shekharnitin/Option-Pricing-Model" target="_blank"
+                            class="btn btn--outline">View on GitHub</a>
+                    </div>
+                </div>
+
+                <div class="project-card" data-project="2">
+                    <div class="project-header">
+                        <h3>Fertilizer Recommendation System</h3>
+                        <div class="project-tech">
+                            <span class="tech-tag">React.js</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Tailwind</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <p>Machine learning model for optimal fertilizer recommendations from soil and crop data.</p>
+                        <ul>
+                            <li>95% accuracy in recommendations</li>
+                            <li>Complex data translation to actionable insights</li>
+                            <li>Full-stack web application</li>
+                        </ul>
+                    </div>
+                    <div class="project-actions">
+                        <a href="https://github.com/shekharnitin/Fertilizer-Recommendation-System" target="_blank"
+                            class="btn btn--outline">View on GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-controls">
+                <button class="carousel-btn prev-btn">‹</button>
+                <div class="carousel-dots">
+                    <span class="dot active" data-slide="0"></span>
+                    <span class="dot" data-slide="1"></span>
+                    <span class="dot" data-slide="2"></span>
+                </div>
+                <button class="carousel-btn next-btn">›</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Programming Languages</h3>
+                    <div class="skill-items">
+                        <div class="skill-item" data-level="95">
+                            <div class="skill-info">
+                                <span>Python</span>
+                                <span class="skill-level">95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="95"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-level="90">
+                            <div class="skill-info">
+                                <span>C++</span>
+                                <span class="skill-level">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-level="85">
+                            <div class="skill-info">
+                                <span>JavaScript</span>
+                                <span class="skill-level">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-level="95">
+                            <div class="skill-info">
+                                <span>HTML</span>
+                                <span class="skill-level">95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="95"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-level="95">
+                            <div class="skill-info">
+                                <span>CSS</span>
+                                <span class="skill-level">95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="95"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-level="90">
+                            <div class="skill-info">
+                                <span>MySQL</span>
+                                <span class="skill-level">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Technologies & Frameworks</h3>
+                    <div class="skill-items">
+                        <div class="skill-item" data-level="90">
+                            <div class="skill-info">
+                                <span>React.js</span>
+                                <span class="skill-level">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-level="85">
+                            <div class="skill-info">
+                                <span>Flask</span>
+                                <span class="skill-level">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-level="95">
+                            <div class="skill-info">
+                                <span>Pandas/Numpy</span>
+                                <span class="skill-level">95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="95"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="radar-chart-container">
+                    <canvas id="skillsRadar"></canvas>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Let's Connect</h3>
+                    <p>I'm always open to discussing new opportunities, innovative projects, and collaborations in
+                        quantitative finance and software development.</p>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">📧</div>
+                        <div class="contact-details">
+                            <span class="contact-label">Email</span>
+                            <a href="mailto:nitinshekhar2006@gmail.com"
+                                class="contact-value">nitinshekhar2006@gmail.com</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">📱</div>
+                        <div class="contact-details">
+                            <span class="contact-label">Phone</span>
+                            <a href="tel:+91-8134027950" class="contact-value">+91-8134027950</a>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="https://linkedin.com/in/nitin-shekhar" target="_blank" class="social-link">
+                            <span class="social-icon">💼</span>
+                            <span>LinkedIn</span>
+                        </a>
+                        <a href="https://github.com/shekharnitin" target="_blank" class="social-link">
+                            <span class="social-icon">🐙</span>
+                            <span>GitHub</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact-form-container">
+                    <iframe
+                        src="https://docs.google.com/forms/d/e/1FAIpQLSdWrfmHwxExSmUFk4DNV-N8h-6gREolNFYIySqf3n_b5FEieA/viewform?embedded=true"
+                        width="640" height="700" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mini Trading Game -->
+    <div class="trading-game hidden" id="tradingGame">
+        <div class="game-header">
+            <h4>Quick Trade Simulator</h4>
+            <button class="game-close">×</button>
+        </div>
+        <div class="game-content">
+            <div class="game-balance">Balance: $<span id="gameBalance">10000</span></div>
+            <div class="game-stock">
+                <span id="stockSymbol">AAPL</span>: $<span id="stockPrice">150.00</span>
+                <span id="priceChange" class="positive">+2.5%</span>
+            </div>
+            <div class="game-actions">
+                <button class="btn btn--sm game-btn buy-btn">Buy</button>
+                <button class="btn btn--sm game-btn sell-btn">Sell</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Easter Egg Trigger -->
+    <div class="easter-egg hidden" id="easterEgg">
+        <div class="easter-content">
+            <h3>🎉 Konami Code Activated!</h3>
+            <p>You found the secret achievements!</p>
+            <div class="secret-achievements">
+                <div class="secret-badge">Code Explorer 🔍</div>
+                <div class="secret-badge">Curiosity Master 🧠</div>
+                <div class="secret-badge">Hidden Gem Finder 💎</div>
+            </div>
+            <button class="btn btn--primary" onclick="closeEasterEgg()">Awesome!</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
