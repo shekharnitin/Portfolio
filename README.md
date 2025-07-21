@@ -1,2 +1,2 @@
 # Portfolio
-Checkout my portfolio at [Portfolio](shekharnitin.github.io/Portfolio)
+Checkout my portfolio at [Portfolio](https://shekharnitin.github.io/Portfolio/)
