@@ -336,7 +336,7 @@ function setupCharts() {
         new Chart(skillsCtx, {
             type: 'radar',
             data: {
-                labels: ['Python', 'JavaScript', 'React', 'Finance', 'DSA', 'Data Analysis'],
+                labels: ['Python', 'JavaScript', 'React', 'Finance', 'Power BI', 'Data Analysis'],
                 datasets: [{
                     label: 'Skill Level',
                     data: [95, 85, 90, 92, 88, 95],

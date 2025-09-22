@@ -1189,6 +1189,12 @@ section {
   gap: var(--space-32);
   align-items: center;
 }
+.experience-grid2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-32);
+  align-items: center;
+}
 
 .experience-card {
   background: rgba(var(--color-surface), 0.1);
@@ -1201,6 +1207,12 @@ section {
 .impact-stats {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-16);
+  margin: var(--space-24) 0;
+}
+.impact-stats2 {
+  display: grid;
+
   gap: var(--space-16);
   margin: var(--space-24) 0;
 }
@@ -1218,6 +1230,11 @@ section {
 
 .stat-label {
   font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+  margin-top: var(--space-4);
+}
+.stat-label2 {
+  font-size: var(--font-size-lg);
   color: var(--color-text-secondary);
   margin-top: var(--space-4);
 }
